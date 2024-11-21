@@ -1,0 +1,71 @@
+/* Fondo general */
+body {
+  background-image: url('/img/php.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Contenedor principal */
+.background-container {
+  background-color: rgba(34, 33, 33, 0.503); /* Fondo oscuro semitransparente */
+  border-radius: 10px;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Títulos */
+h1 {
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  font-size: 3.0rem; /* Incrementado el tamaño */
+  text-align: center;
+  color: white;
+  margin-bottom: 30px;
+}
+
+/* Contenedor horizontal */
+.textareas-container {
+  display: flex;
+  justify-content: space-evenly; /* Espaciado uniforme entre los elementos */
+  align-items: center;
+  width: 100%; /* Ocupa todo el ancho disponible */
+}
+
+/* Caja de texto */
+.form-control {
+  background-color: transparent; /* Fondo completamente transparente */
+  border: 1px solid rgba(255, 255, 255, 0.5); /* Borde blanco semitransparente */
+  color: white; /* Texto blanco */
+  font-size: 1.4rem; /* Texto más grande */
+  resize: none; /* Evita que se pueda redimensionar */
+  width: 550px; /* Ajustado para ser más ancho */
+  height: 400px; /* Altura grande */
+}
+
+/* Caja de texto al hacer focus */
+.form-control:focus {
+  background-color: transparent;
+  color: white;
+  border-color: rgba(255, 255, 255, 0.8); /* Resalta el borde al enfocarlo */
+  outline: none;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+
+/* Etiquetas de texto */
+.form-label {
+  font-size: 1.6rem; /* Tamaño más grande para etiquetas */
+  font-weight: bold;
+  color: white; /* Asegura que sean blancas */
+}
+
+#phpInput::placeholder {
+  color: white;
+  opacity: 1; /* Asegura que el color sea sólido */
+}
